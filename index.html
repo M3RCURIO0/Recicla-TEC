@@ -32,15 +32,40 @@
             Cadastre o equipamento que você deseja doar ou descartar!
         </p>
     </div>
-    <div class="content">
+    <div class="container">
         <h2>Formulário de Cadastro de E-Lixo</h2>
         <form action="/processar-descartar.php" method="post">
             <label for="nome">Seu Nome (Aluno/Professor/Comunidade)</label>
             <input type="text" id="nome" name="nome" required>
-            <label for="contrato">E-mail ou WhatzApp</label> 
 
+            <label for="contrato">E-mail ou WhatsApp</label> 
+            <input type="text" id="contato" name="contato" required>
 
+            <label for="tipo_equipamento">Tipo de equipamento</label>
+            <select name="tipo_equipamento" id="tipo_equipamento">
+                <option value="Selecionar..."></option>
+                <option value="Computador">Computador / Notebook</option>
+                <option value="Celulares">Celulares / Tablets</option>
+                <option value="Perifericos">Periféricos (Teclados, Mouse, Cabos...)</option>
+                <option value="Baterias">Pilhas e Baterias</option>
+                <option value="Outros">Outros (Espefique abaixo.)</option>
+
+            </select>
+
+            <label for="estado">Estado do Equipamento:</label> 
+            <select name="estado" id="estado" required>
+                <option value="funcionando">Funcionando (DOAÇÃO)</option>
+                <option value="estragado">Estragado (Descarte / Reciclagem)</option>
+                <option value="parcial">Funcionando parcialmente (Pode render peças)</option>
+
+            </select>           
+
+            <label for="descricao">Descrição do produto (Marca / Modelo / Problemas, se hover, etc)</label>
+            <textarea name="descricap" id="descricao" rows="4"></textarea>
+
+            <button type="submit">Registrar Equipamento</button>
         </form>
+        
     </div>
 </body>
 </html>
