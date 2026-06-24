@@ -11,15 +11,27 @@ body {
 }
 header{
    background-color: #bd00ff;
-   color: #9fe0a1;
+   color: #75dd78;
    padding: 15px 50px;
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center; /* Controla o alinhamento vertical: center, flex-start, ou flex-end */
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  margin-left: 0px;
+}
+
+.logo img{
+   width: 50px;
+   height: auto;
+}
+
 header nav a {
-   color: #9fe0a1;
+   color: #75dd78;
    text-decoration: none;
    margin-left: 20px;
    font-weight: bold;
@@ -30,7 +42,7 @@ header nav a:hover {
 }
 
 .hero {
-   background-color: #9fe0a1;
+   background-color: #75dd78;
    color: #bd00ff;
    text-align: center;
    padding: 50px 20px;
@@ -41,8 +53,9 @@ header nav a:hover {
    background-color: #bd00ff;
    padding: 30px;
    border-radius: 8px;
-   box-shadow: 0 4px 8px #9fe0a1);
-   color: #9fe0a1;
+   box-shadow: 0 4px 8px #00ff08);
+   color: #00ff08;
+   font-size: 18px;
 }
 
 form {
@@ -59,4 +72,25 @@ input, section, textarea{
    padding: 10px;
    margin-top: 5px;
    border: 1px solid;
+}
+
+button{
+   margin-top: 20px;
+   padding: 12px;
+   background-color: #75dd78;
+   color: #a500e0;
+   border: none;
+   border-radius: 4px;
+   font-size: 18px;
+   
+}
+button:hover{
+   background-color: #6bc76e;
+}
+footer{
+   text-align: center;
+   padding: 20px;
+   background-color: #75dd78;
+   margin-top: 40px;
+   font-size: 16px;
 }
